@@ -2,9 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Каталог</title>
+  <title>Каталог мебели</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -16,27 +15,29 @@
     </nav>
   </header>
 
-  <main class="grid">
+  <main>
     <div class="product">
-      <img src="https://via.placeholder.com/200x150?text=Диван" alt="Диван">
-      <h3>Диван</h3>
-      <p>50 000 ₸</p>
-      <button onclick="addToCart('Диван', 50000)">В корзину</button>
+      <img src="prajm.jpg" alt="Диван Прайм">
+      <h3>Диван Прайм</h3>
+      <p>70 000 ₸</p>
+      <button onclick="addToCart('Диван Прайм', 70000)">В корзину</button>
     </div>
 
     <div class="product">
-      <img src="https://via.placeholder.com/200x150?text=Стул" alt="Стул">
+      <img src="chair.jpg" alt="Стул">
       <h3>Стул</h3>
       <p>10 000 ₸</p>
       <button onclick="addToCart('Стул', 10000)">В корзину</button>
     </div>
 
     <div class="product">
-      <img src="https://via.placeholder.com/200x150?text=Стол" alt="Стол">
+      <img src="table.jpg" alt="Стол">
       <h3>Стол</h3>
       <p>30 000 ₸</p>
       <button onclick="addToCart('Стол', 30000)">В корзину</button>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
