@@ -19,6 +19,9 @@ header {
 /* Левый логотип */
 header .logo-left img.logo {
   color: black;
+  height: 30 ;
+  width: auto;
+  margin-right:10px ;
   font-size: 40px;   /* сделал больше */
   font-weight: bold;
 }
