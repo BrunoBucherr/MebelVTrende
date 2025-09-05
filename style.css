@@ -10,39 +10,45 @@ body {
 /* Шапка */
 header {
   background-color: orange;   /* оранжевый фон */
-  padding: 20px 40px;
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Левый логотип */
-header .logo-left img.logo {
-  color: black;
-  height: 10px;
-  width: auto;
-  margin-right: 10px;
-  font-size: 15px;   /* сделал больше */
+/* Левый логотип + текст */
+header .logo-left {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
   font-weight: bold;
+  color: white;
+}
+
+header .logo-left img.logo {
+  height: 80px;      /* ← регулируй размер логотипа */
+  width: auto;
+  margin-right: 40px;
 }
 
 /* Центрированный заголовок */
 header .title-center {
   color: white;
-  font-size: 26px;   /* белый крупный текст */
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   flex: 1;
 }
 
-/* Правый логотип */
+/* Правый текст */
 header .logo-right {
-  color: black;
-  font-size: 24px;   /* тоже крупнее */
+  color: white;
+  font-size: 18px;
   font-weight: bold;
   text-align: right;
 }
 
+/* Основной контент */
 main {
   padding: 20px 40px;
   text-align: center;
@@ -124,7 +130,9 @@ input, textarea {
   margin: 10px 0;
 }
 
-.logo {
-  color: black;     /* чёрный текст */
-  font-weight: bold;
-}
+
+
+
+
+
+
