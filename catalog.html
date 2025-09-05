@@ -4,54 +4,52 @@
   <meta charset="UTF-8">
   <title>Каталог мебели</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Каталог мебели</h1>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="cart.html">Корзина</a>
-    </nav>
+  <header class="header">
+    <div class="logo-left">Треви</div>
+    <div class="title-center">Каталог мебели</div>
+    <div class="logo-right">Mebel V Trende</div>
   </header>
 
   <main>
-    <div class="product">
-      <img src="prajm.jpg" alt="Диван Прайм">
-      <h3>Диван Прайм</h3>
-      <p>940 000 ₸</p>
-      <button onclick="addToCart('Диван Прайм', 940 000)">В корзину</button>
-    </div>
-    
-    <div class="product">
-      <img src="Гранд.jpg" alt="Диван Гранд">
-      <h3>Диван Гранд</h3>
-      <p>1 395 500 ₸</p>
-      <button onclick="addToCart('Диван Гранд скай 9', 1 395 500)">В корзину</button>
-    </div>
+    <div class="grid">
+      <div class="product">
+        <img src="prajm.jpg" alt="Диван Прайм">
+        <h3>Диван Прайм</h3>
+        <p>940 000 ₸</p>
+        <button onclick="addToCart('Диван Прайм', 940000)">В корзину</button>
+      </div>
+      
+      <div class="product">
+        <img src="Гранд.jpg" alt="Диван Гранд">
+        <h3>Диван Гранд</h3>
+        <p>1 395 500 ₸</p>
+        <button onclick="addToCart('Диван Гранд скай 9', 1395500)">В корзину</button>
+      </div>
 
-    <div class="product">
-      <img src="диван кредо.jpg" alt="Диван Кредо">
-      <h3>Диван Кредо</h3>
-      <p>971 000 ₸</p>
-      <button onclick="addToCart('Диван Кредо Феллини 05', 971 000)">В корзину</button>
-    </div>
-    
-    <div class="product">
-      <img src="chair.jpg" alt="Стул">
-      <h3>Стул</h3>
-      <p>10 000 ₸</p>
-      <button onclick="addToCart('Стул', 10000)">В корзину</button>
-    </div>
+      <div class="product">
+        <img src="диван кредо.jpg" alt="Диван Кредо">
+        <h3>Диван Кредо</h3>
+        <p>971 000 ₸</p>
+        <button onclick="addToCart('Диван Кредо Феллини 05', 971000)">В корзину</button>
+      </div>
+      
+      <div class="product">
+        <img src="chair.jpg" alt="Стул">
+        <h3>Стул</h3>
+        <p>10 000 ₸</p>
+        <button onclick="addToCart('Стул', 10000)">В корзину</button>
+      </div>
 
-    <div class="product">
-      <img src="table.jpg" alt="Стол">
-      <h3>Стол</h3>
-      <p>30 000 ₸</p>
-      <button onclick="addToCart('Стол', 30000)">В корзину</button>
+      <div class="product">
+        <img src="table.jpg" alt="Стол">
+        <h3>Стол</h3>
+        <p>30 000 ₸</p>
+        <button onclick="addToCart('Стол', 30000)">В корзину</button>
+      </div>
     </div>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>

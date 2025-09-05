@@ -8,30 +8,29 @@
 </head>
 <body onload="renderCart()">
   <header>
-    <h1>Корзина</h1>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="cart.html">Корзина</a>
-    </nav>
+    <div class="logo-left">Треви</div>
+    <div class="title-center">Каталог мебели</div>
+    <div class="logo-right">Mebel V Trende</div>
   </header>
 
   <main>
     <h2>Ваши товары:</h2>
     <ul id="cartList"></ul>
+
+    <h2>Способ доставки</h2>
+    <label>
+      <input type="radio" name="delivery" value="pickup" checked> Самовывоз (0 ₸)
+    </label><br>
+    <label>
+      <input type="radio" name="delivery" value="kostanay"> Доставка по Костанаю и Тобылу (2000 ₸)
+    </label><br>
+    <label>
+      <input type="radio" name="delivery" value="other"> В другой город (250 ₸/км)
+      <input type="number" id="distance" placeholder="Введите км">
+    </label>
+
     <p>Итого: <span id="total">0</span> ₸</p>
     <a href="order.html" class="btn">Оформить заказ</a>
   </main>
 </body>
 </html>
- <h2>Способ доставки</h2>
-<label>
-  <input type="radio" name="delivery" value="pickup" checked> Самовывоз (0 ₸)
-</label><br>
-<label>
-  <input type="radio" name="delivery" value="kostanay"> Доставка по Костанаю и Тобылу (2000 ₸)
-</label><br>
-<label>
-  <input type="radio" name="delivery" value="other"> В другой город (250 ₸/км)  
-  <input type="number" id="distance" placeholder="Введите км">
-</label>

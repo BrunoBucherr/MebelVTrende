@@ -8,29 +8,23 @@
 </head>
 <body>
   <header>
-    <h1>Оформление заказа</h1>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="cart.html">Корзина</a>
-    </nav>
+    <div class="logo-left">Треви</div>
+    <div class="title-center">Каталог мебели</div>
+    <div class="logo-right">Mebel V Trende</div>
   </header>
 
   <main>
-    <form onsubmit="confirmOrder(event)">
-      <input type="text" id="name" placeholder="Ваше имя" required>
-      <input type="tel" id="phone" placeholder="Телефон" required>
-      <textarea id="address" placeholder="Адрес доставки" required></textarea>
+    <h2>Ваш заказ</h2>
+    <ul id="orderList"></ul>
+    <p>Итого: <span id="orderTotal">0</span> ₸</p>
 
-      <div class="delivery">
-        <label><input type="radio" name="delivery" value="Самовывоз" checked> Самовывоз со склада</label><br>
-        <label><input type="radio" name="delivery" value="На заказ"> На заказ (с доставкой)</label>
-      </div>
-
-      <button type="submit" class="btn">Подтвердить заказ</button>
+    <h2>Данные покупателя</h2>
+    <form id="orderForm">
+      <label>Имя: <input type="text" id="name" required></label><br><br>
+      <label>Телефон: <input type="tel" id="phone" required></label><br><br>
+      <label>Адрес: <input type="text" id="address" required></label><br><br>
+      <button type="submit">Подтвердить заказ</button>
     </form>
-
-    <p id="result"></p>
   </main>
 </body>
 </html>

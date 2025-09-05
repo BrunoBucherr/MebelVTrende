@@ -7,26 +7,41 @@ body {
   color: #333;
 }
 
+/* Шапка */
 header {
-  background: #ee9106;
-  color: white;
-  padding: 15px;
-  text-align: center;
+  background-color: orange;   /* оранжевый фон */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+/* Левый логотип */
+header .logo-left {
+  color: black;
+  font-size: 20px;
   font-weight: bold;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+/* Центрированный заголовок */
+header .title-center {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+/* Правый логотип */
+header .logo-right {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
 }
 
 main {
-  padding: 20px;
+  padding: 20px 40px;
   text-align: center;
 }
 
@@ -40,19 +55,20 @@ h1, h2 {
 
 /* Каталог */
 .grid {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;          /* расстояние между карточками */
   justify-content: center;
-  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .product {
   background: white;
   border-radius: 8px;
   padding: 15px;
-  width: 220px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s;
+  text-align: center;
 }
 
 .product:hover {
@@ -104,6 +120,7 @@ input, textarea {
 .delivery {
   margin: 10px 0;
 }
+
 .logo {
   color: black;     /* чёрный текст */
   font-weight: bold;
