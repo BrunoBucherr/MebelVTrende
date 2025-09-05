@@ -42,3 +42,36 @@ function confirmOrder(event) {
   cart = [];
   localStorage.removeItem("cart");
 }
+ function calculateDelivery() {
+  let deliveryCost = 0;
+  const deliveryOption = document.querySelector('input[name="delivery"]:checked').value;
+
+  if (deliveryOption === "pickup") {
+    deliveryCost = 0;
+  } else if (deliveryOption === "kostanay") {
+    deliveryCost = 2000; // фиксированная цена
+  } else if (deliveryOption === "other") {
+    const km = document.getElementById("distance").value || 0;
+    deliveryCost = km * 250;
+  }
+
+  return deliveryCost;
+}
+
+function updateCart() {
+  let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  let cartContainer = document.getElementById('cart-items');
+  let total = 0;
+  cartContainer.innerHTML = "";
+
+  cartItems.forEach(item => {
+    cartContainer.innerHTML += `<p>${item.name} - ${item.price} ₸</p>`;
+    total += item.price;
+  });
+
+  const deliveryCost = calculateDelivery();
+  total += deliveryCost;
+
+  document.getElementById('cart-total').innerText = 
+    `Сумма: ${total} ₸ (включая доставку ${deliveryCost} ₸)`;
+}

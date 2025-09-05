@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background: #333;
+  background: #ee9106;
   color: white;
   padding: 15px;
   text-align: center;
@@ -103,4 +103,8 @@ input, textarea {
 
 .delivery {
   margin: 10px 0;
+}
+.logo {
+  color: black;     /* чёрный текст */
+  font-weight: bold;
 }
